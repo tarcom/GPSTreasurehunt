@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100%; }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script type="text/javascript">
+
+var map;
+
+function initMap() {
+  var myLatLng = {lat: 57.07059251149843, lng: 10.111258691186189};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 20,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World alsk 2!'
+  });
+
+
+
+    var myloc = new google.maps.Marker({
+        clickable: false,
+        icon: new google.maps.MarkerImage('//maps.gstatic.com/mapfiles/mobile/mobileimgs2.png',
+                new google.maps.Size(22,22),
+                new google.maps.Point(0,18),
+                new google.maps.Point(11,11)),
+        shadow: null,
+        zIndex: 999,
+        map:map // your google.maps.Map object
+    });
+
+    if (navigator.geolocation) navigator.geolocation.getCurrentPosition(function(pos) {
+        var me = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
+        myloc.setPosition(me);
+    }, function(error) {
+        // ...
+    });
+
+
+
+}
+
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvLMSeefS3013biBKaY2dmYfEVYbOWOww&callback=initMap">
+    </script>
+  </body>
+</html>
