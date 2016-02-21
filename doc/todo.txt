@@ -2,12 +2,22 @@ TODO:
 ====
 
 
-Get it on github
+DONE: Get it on github
 
-Find out to run locally with local db, or with aogj db
+DONE: Find out to run locally with local db, or with aogj db
 
-make db creation script including reset (truncate and create)
+DONE: make db creation script including reset (truncate and create)
 
+
+DONE: NOT-A-PROBLEM-RIGHT-NOW, will perhaps be if developing local to aogj db, so do not do that.: solve: XMLHttpRequest cannot load http://localhost/geo/savePosition.php?name=yes%209&hint=use%20youre%20imagi…9&lat=57.0707729&lon=10.111310699999999&accuracy=20&imageUrl=56ca1f32ba963. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://192.168.0.92' is therefore not allowed access.
+
+DONE: solve: auto-increment not working? always zero (0)
+
+DONE: IT DOES WORK, (just use safari, not chrome on iphone. PC is a mystery. Not tested on android... This is weird!) solve: on phone, image is saved, but not db data
+       on PC: db data is saved, but not image
+       on phone: db data is saved, when no image is selected
+
+solve: accuracy seems low (65meters), but when google maps are opened, it drops to 5 og 10 menters... then increases right after...
 
 make the treasurehunt maker app (admin-mode)
 *possible show one map with all treasures on as markers, with current position as center

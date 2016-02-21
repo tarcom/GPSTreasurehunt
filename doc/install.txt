@@ -1,0 +1,10 @@
+install xampp if you want to run locally
+
+make a symbolic link from C:\xampp\htdocs -> projects/gpstreasure/html called geo (C:\xampp\htdocs\geo)
+
+configure youre intelliJ IDEA to have php support
+
+run youre locally apache and mysql
+
+make sure that youre db points to localhost and not aogj.com or whatever
+

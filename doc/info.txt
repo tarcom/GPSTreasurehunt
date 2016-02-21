@@ -1,0 +1,28 @@
+Sites that are good for you:
+============================
+
+
+Current dev key: AIzaSyDvLMSeefS3013biBKaY2dmYfEVYbOWOww
+This is from the actual TresureHuntProject - Browser Key 1
+Creation date: Feb 21, 2016, 4:55:24 PM
+Currently NO reject URLs
+
+
+Get an API key + info
+https://developers.google.com/maps/documentation/javascript/get-api-key
+
+
+create and manage youre google maps api key:
+https://console.developers.google.com/apis/credentials/
+
+
+Examples:
+https://developers.google.com/maps/documentation/javascript/examples
+
+
+myPhpAdmin:
+mysql06.cliche.dk
+
+
+http://192.168.0.92/geo/LogTreasures.php
+

@@ -50,7 +50,7 @@
     }
 
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0dBWFQ6joHjgR48ROuOjpVzHMmK60qSk&callback=initMap"
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvLMSeefS3013biBKaY2dmYfEVYbOWOww&callback=initMap"
         async defer></script>
 
 
@@ -76,12 +76,12 @@
 
         var treasureName = document.getElementById("treasureName").value;
         var treasureHint = document.getElementById("treasureHint").value;
-        var treasureImg = document.getElementById("treasureImg").value;
+        //var treasureImg = document.getElementById("treasureImg").value;
         var treasureImageId = document.getElementById("treasureImageId").value;
 
         console.log("name=" + treasureName);
         console.log("hint=" + treasureHint);
-        console.log("img=" + treasureImg);
+        //console.log("img=" + treasureImg);
         console.log("globalLat=" + globalLat);
         console.log("globalLon=" + globalLon);
         console.log("treasureImageId=" + treasureImageId);
@@ -93,7 +93,8 @@
 
 
         //xhttp.open("GET", "http://localhost/geo/savePosition.php" +
-        var getUrl = "http://aogj.com/geo/savePosition.php" +
+        //var getUrl = "http://aogj.com/geo/savePosition.php" +
+        var getUrl = "http://192.168.92/geo/savePosition.php" +
             "?name=" + treasureName +
             "&hint=" + treasureHint +
             "&lat=" + globalLat +
@@ -247,6 +248,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo "imagetype=$imagetype<br>";
     echo "imagetemp=$imagetemp<br>";
     echo "imagePath=$imagePath<br>";
+    echo "imageId=$imageId<br>";
+
+    $name = $_POST['name'];
+    echo "name=$name<br>";
+    $hint = $_POST['hint'];
+    echo "hint=$hint<br>";
+    $imageId = $_POST['imageId'];
     echo "imageId=$imageId<br>";
 
     if (is_uploaded_file($imagetemp)) {
