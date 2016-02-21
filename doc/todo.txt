@@ -1,0 +1,48 @@
+Get it on github
+
+Find out to run locally with local db, or with aogj db
+
+make db creation script including reset (truncate and create)
+
+
+make the treasurehunt maker app (admin-mode)
+*possible show one map with all treasures on as markers, with current position as center
+*show list with treasure:
+ - ID
+ - name
+ - description
+ - picture
+ - GPS coordination
+ - static map (possible non-static)
+   - satelite
+   - possible with current position
+   - zoom level is close
+
+*last in list, is where you add more treasures OR a new page perhaps (new is more simple)
+ - make the list page pretty static => simpler
+ - when you save, page is reloaded and point is now added to the list and you may add a new
+
+*make treasurehunt createion app
+ - possible just below the treshure list
+ - make a hunt defined by treasure ID, possible just a simple input field, where you add the ID's comma separated
+
+ *make the actual tresureHunt app
+  - possible very simple
+  - shows GPS accuracy level (red yellow green...)
+  - a picture of tresure
+  - a button where you press I FOUND IT...
+  - ok to press all you want
+  - once found, goto next pic
+
+
+
+---
+Future ideas:
+
+*password protect admin page...
+
+*make iphone/android app
+
+*perhaps use google as AUTH
+
+*get rich
