@@ -1,2 +1,2 @@
 # GPSTreasurehunt
-Does youre kits love tresurehunt?
+Does youre kids love tresurehunt?
